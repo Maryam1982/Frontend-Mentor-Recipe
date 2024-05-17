@@ -1,0 +1,145 @@
+@font-face {
+  font-family: "YoungSerif";
+  src: url(./assets/fonts/young-serif/YoungSerif-Regular.ttf);
+}
+@font-face {
+  font-family: "Outfit";
+  src: url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: hsl(30, 54%, 90%);
+  font-family: "Outfit";
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: hsl(24, 5%, 18%);
+  line-height: 1.5;
+  padding: 2rem 0;
+}
+
+.container {
+  width: 45%;
+  margin: 0 auto;
+  background-color: white;
+  padding: 3.5rem;
+  border-radius: 10px;
+}
+
+.header-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* width: 100%; */
+}
+
+.grid-container > * {
+  padding: 1rem 0;
+}
+
+.grid-container > *:nth-last-child(n + 3) {
+  border-bottom: 1px solid #eeeeee;
+}
+
+.grid-container > *:nth-child(2n) {
+  font-weight: 600;
+  color: hsl(14, 45%, 36%);
+}
+
+.grid-row-border {
+  border-bottom: 1px solid hsl(30, 18%, 87%);
+}
+
+.title {
+  font-family: "YoungSerif";
+  font-size: 4rem;
+  margin: 3rem 0 2rem 0;
+  font-weight: 400;
+}
+
+.sub-title {
+  font-family: "Outfit";
+  font-size: 1.7rem;
+  color: hsl(24, 5%, 18%);
+}
+
+.overview-title {
+  font-family: "Outfit";
+  color: hsl(332, 51%, 32%);
+  font-weight: 600;
+  font-size: 2rem;
+  margin-bottom: 1.2rem;
+}
+
+.overview-container {
+  padding: 2.5rem 4rem;
+  background-color: hsl(330, 100%, 98%);
+  margin: 4.5rem 0;
+  border-radius: 10px;
+}
+
+.title-secondry {
+  font-family: "YoungSerif";
+  font-size: 3rem;
+  font-weight: 400;
+  color: hsl(14, 45%, 36%);
+  margin-bottom: 2rem;
+}
+
+.item {
+  line-height: 1.8;
+}
+
+.list-container {
+  padding-inline-start: 17px;
+}
+
+.item::marker {
+  color: hsl(332, 51%, 32%);
+}
+
+section {
+  margin: 5rem 0;
+}
+
+hr {
+  border-top: 1px solid #f9f9f9;
+}
+
+.sub-header {
+  margin-bottom: 1.5rem;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    width: 70%;
+  }
+
+  body {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .container {
+    width: 100%;
+  }
+}
